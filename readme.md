@@ -18,7 +18,6 @@ module "apache" {
   vpc_id          = "vpc-xxxxxxxxxxxxxxxxxx"
   my_ip_with_cidr = "YOUR_IP"
   public_key      = file("~/.ssh/id_rsa.pub")
-  private_key     = file("~/.ssh/id_rsa")
   instance_type   = "t2.micro"
   server_name     = "apache-modules"
 }

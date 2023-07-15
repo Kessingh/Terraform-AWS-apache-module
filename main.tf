@@ -96,7 +96,7 @@ resource "aws_instance" "test" {
     ]
   }*/
 
-  provisioner "file" {
+ /*provisioner "file" {
     source      = "/home/ksingh/testfile"
     destination = "/home/ec2-user/testfile"
   connection {
@@ -106,7 +106,7 @@ resource "aws_instance" "test" {
     private_key = var.private_key 
     host     = "${self.public_ip}"
    }
-  }
+  }*/
   tags = {
     Name = var.server_name
     }
